@@ -1,0 +1,18 @@
+/* body {
+  background-image: url("Reifen Background.jpg");
+  background-position: center top;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+*/
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#wrapper{
+position: fixed;
+
+}
