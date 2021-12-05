@@ -51,21 +51,39 @@
 <!-- Bestellformular -->
 <h1 class="p-2">Bestellung</h1>
 <div class="container mt-2">
-  <div class="row">
+  <div class="row g-3">
     <div class="col-sm-2">
-      <label for="anzahl" class="form-label">Anzahl</label>
-      <input type="text" class="form-control">
+      <div style="margin-top: 35px; margin-left: 60px">
+        <strong>Vorderachse</strong>
+      </div>
+      <div style="margin-top: 55px; margin-left: 60px">
+        <strong>Hinterachse</strong>
+      </div>
     </div>
     <div class="col-sm-2">
+      <label for="anzahl" class="form-label">Anzahl Reifenpaar</label>
+      <input type="text" class="form-control">
+      <label for="anzahl" class="form-label mt-2">Anzahl Reifenpaar</label>
+      <input type="text" class="form-control">
+    </div>
+    <!--<div class="col-sm-2">
       <label for="achse" class="form-label">Achse</label>
       <select class="form-select" placeholder="Achse auswählen">
         <option value>Achse auswählen</option>
         <option>Vorne</option>
         <option>Hinten</option>
       </select>
-    </div>
+
+    </div> -->
     <div class="col-sm-2">
       <label for="reifenart" class="form-label">Reifenart</label>
+      <select class="form-select">
+        <option value>Reifenart auswählen</option>
+        <option>Slicks</option>
+        <option>Inters</option>
+        <option>Rains</option>
+      </select>
+      <label for="reifenart" class="form-label mt-2">Reifenart</label>
       <select class="form-select">
         <option value>Reifenart auswählen</option>
         <option>Slicks</option>
@@ -84,6 +102,16 @@
         <option>Dry Wet (T/T)</option>
         <option>Heavy Wet (A/A)</option>
       </select>
+      <label for="mischung" class="form-label mt-2">Mischung</label>
+      <select class="form-select">
+        <option value>Mischung auswählen</option>
+        <option>Cold (H/E)</option>
+        <option>Medium (G/D)</option>
+        <option>Hot (I/F)</option>
+        <option>Intermediate (H+/E+)</option>
+        <option>Dry Wet (T/T)</option>
+        <option>Heavy Wet (A/A)</option>
+      </select>
     </div>
     <div class="col-md-2">
       <label for="bearbeitungsvariante" class="form-label">Bearbeitungsvariante</label>
@@ -93,9 +121,16 @@
         <option>Extra grooved</option>
         <option>Extra grooved and siped</option>
       </select>
+      <label for="bearbeitungsvariante" class="form-label mt-2">Bearbeitungsvariante</label>
+      <select class="form-select">
+        <option value>Variante auswählen</option>
+        <option>Siped</option>
+        <option>Extra grooved</option>
+        <option>Extra grooved and siped</option>
+      </select>
     </div>
     <div class="col-md-2 pt-2">
-      <button id="bestellen" class="btn btn-primary btn-md mt-4" type="submit">Bestellen</button>
+      <button id="bestellen" class="btn btn-primary btn-md" style="margin-top: 60px" type="submit">Bestellen</button>
     </div>
   </div>
 </div>
